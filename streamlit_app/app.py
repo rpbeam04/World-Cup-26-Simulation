@@ -233,7 +233,7 @@ def render_group_grid(result):
                     fpath = flag_for(t) if t else None
                     if fpath:
                         try:
-                            row_cols[0].image(fpath, width=24)
+                            row_cols[0].image(fpath)
                         except Exception:
                             row_cols[0].write('')
                     else:
